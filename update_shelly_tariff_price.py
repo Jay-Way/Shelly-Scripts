@@ -31,7 +31,7 @@ def main():
     try:
         token = get_ostrom_access_token()
         price_data = fetch_ostrom_prices(token)
-        current_brutto = get_current_gross_kwh_price(price_data) / 100  # convert to EUR
+        current_brutto = get_current_gross_kwh_price(price_data) / 100
         response = update_shelly_tariff(shelly_url, current_brutto)
         print(f"Sent energy price to Shelly: {response.text}")
     except Exception as e:

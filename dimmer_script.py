@@ -102,7 +102,6 @@ def main():
 
         print('Light should currently be ' + lightState)
         set_shelly_brightness(brightness, lightState)
-        print(f"Sent energy price to Shelly: {response.text}")
     except Exception as e:
         print(f"Error occurred: {e}")
     print("------ ------ ------")

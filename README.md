@@ -6,6 +6,8 @@ This is a collection of simple scripts using dynamic energy prices (By Ostrom) t
 
 `dimmer_script.py`: Controls an LED brightness between 50% and 100%, based on the current energy prices
 
+- Supports three quantiles to set the brightness, e.g., lowest third of total prices → 100% brightess, highest third → 50%, in between: 75%
+
 `boiler_script.py`: Controls a water boiler, switching it on for an hour during the time window of lowest energy prices
 
 `EnergyPriceAPI.py`: Reusable function to call the energy price API
